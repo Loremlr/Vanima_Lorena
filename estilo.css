@@ -1,0 +1,106 @@
+body{
+    font-family: karla;
+    color: #2B2B2B;
+    background-color: #FFFDF9;
+    margin: 0;
+}
+
+header{
+    background-color: #AABF16;
+    height: 330px;
+    background-image: url(img/cabecera-grande.png);
+}
+
+.logo-svg {
+    height: 52px;
+    display: block;
+    fill: #FFFDF9;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    margin-left: 30px;
+    margin-right: 20px;
+} 
+
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    margin: 0px 10px;
+    justify-content: right;
+    
+}
+
+.menu-horizontal a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 20px;
+    display: inline-block;
+    font-weight: 600;
+    color: #FFFDF9;
+    border-right-width: 2px;
+    border-right-style: solid;
+}
+
+p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+h1{
+    display:flex;
+    align-items: center;
+    font-size: 61px;
+    line-height: 52px;
+    margin:20px;
+}
+
+h2{
+    display: flex;
+    align-items: right;
+    font-size: 46px;
+    line-height: 40px;
+}
+
+img{
+    width: 700px;
+    margin: 20px;
+}
+
+
+footer{
+    padding-top: 15px;
+    padding-left: 20px;
+    background-color: #AABF16;
+}
+
+.contenedor{
+    margin: 0px 20px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+/*
+.noticias{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+}
+.texto{
+    width: 500px;
+}
+*/
