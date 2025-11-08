@@ -52,13 +52,13 @@ p{
     line-height: 22px;
 }
 
-h1{
+/*h1{
     display:flex;
     align-items: center;
     font-size: 61px;
     line-height: 52px;
     margin:20px;
-}
+}*/
 
 h2{
     display: flex;
@@ -78,14 +78,14 @@ footer{
     padding-left: 20px;
     background-color: #AABF16;
 }
-
+/*
 .contenedor{
     margin: 0px 20px;
     width: 90%;
     display: grid;
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(8,1fr);
-}
+}*/
 
 /*
 .noticias{
@@ -102,5 +102,4 @@ section{
 }
 .texto{
     width: 500px;
-}
-*/
+}*/

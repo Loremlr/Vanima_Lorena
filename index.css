@@ -1,0 +1,19 @@
+.layout{
+    display: grid;    
+    grid-template-rows: auto 1fr 1fr;
+    box-sizing: border-box;
+}
+
+.row-header{
+    display: grid;;
+
+}
+
+.row-title{
+    margin: 1rem 0rem 1rem 0rem;
+    display:flex;
+    align-items: center;
+    font-size: 61px;
+    line-height: 52px;
+}
+
