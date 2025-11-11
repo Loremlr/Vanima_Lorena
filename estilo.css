@@ -18,15 +18,12 @@ body {
     font-size: 20px;
     padding: 5px 20px;
     display: inline-block;
-    font-weight: 600;
     color: #FFFDF9;
     border-right-width: 2px;
-    border-right-style: solid;
 }
 
 .menu-horizontal a:hover {
-    color: #C8D169;
-    border-color: #FFFDF9;
+    font-weight: 700;
 }
 
 
