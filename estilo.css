@@ -6,64 +6,6 @@ body {
     max-width: 100%;
 }
 
-
-
-header {
-    position: fixed;
-    display: flex;
-    top: 0;
-    width: 100%;
-    background-image: url(img/cabecera-grande.png);
-    animation: encoger;
-    animation-timeline: scroll(root);
-    /* O animation-timeline: view(); */
-    /*animation-range: entry 0% bottom 95%, exit 95% 100%;*/
-    animation-fill-mode: both;
-    animation-range: 0% 400px;
-    overflow-x: hidden;
-}
-
-/* encoger header */
-@keyframes encoger {
-    from {
-        height: 330px;
-
-    }
-
-    to {
-        height: 80px;
-        box-shadow:inset 15px 45px 20px;
-    }
-}
-
-main {
-    margin-top: 354px;
-}
-
-.cabecera {
-    width: 100%;
-}
-
-.logo-svg {
-    height: 52px;
-    display: block;
-    fill: #FFFDF9;
-}
-
-.logo-svg:hover {
-    fill: #C8D169;
-}
-
-#menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    margin: 0 3rem;
-    
-}
-
-
 .menu-horizontal {
     list-style: none;
     display: flex;
@@ -86,6 +28,8 @@ main {
     color: #C8D169;
     border-color: #FFFDF9;
 }
+
+
 
 p {
     font-weight: 400;
@@ -110,24 +54,4 @@ img {
     width: 700px;
 }
 
-footer {
-    background-color: #AABF16;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 3rem;
-}
-
-@media (max-width: 800px) {
-    footer {
-        padding: 2rem;
-        height: 5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 16px;
-    }
-
-}
 
