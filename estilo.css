@@ -1,38 +1,46 @@
-body{
+body {
     font-family: karla;
     color: #2B2B2B;
     background-color: #FFFDF9;
     margin: 0;
+    max-width: 100%;
 }
 
-@keyframes encoger {
-  from {
-    height: 330px;
 
-  }
-  to {
-    height: 7rem;
-  }
-}
 
-header{
+header {
     position: fixed;
     display: flex;
     top: 0;
     width: 100%;
     background-image: url(img/cabecera-grande.png);
-    animation: encoger ;
-    animation-timeline: scroll(root); /* O animation-timeline: view(); */
+    animation: encoger;
+    animation-timeline: scroll(root);
+    /* O animation-timeline: view(); */
     /*animation-range: entry 0% bottom 95%, exit 95% 100%;*/
     animation-fill-mode: both;
     animation-range: 0% 400px;
+    overflow-x: hidden;
 }
 
-main{
+/* encoger header */
+@keyframes encoger {
+    from {
+        height: 330px;
+
+    }
+
+    to {
+        height: 80px;
+        box-shadow:inset 15px 45px 20px;
+    }
+}
+
+main {
     margin-top: 354px;
 }
 
-.cabecera{
+.cabecera {
     width: 100%;
 }
 
@@ -42,27 +50,28 @@ main{
     fill: #FFFDF9;
 }
 
-.logo-svg:hover{
-    fill:#C8D169;
+.logo-svg:hover {
+    fill: #C8D169;
 }
 
-#menu{
+#menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    padding: 1rem 3rem;
-} 
+    margin: 0 3rem;
+    
+}
 
 
-.menu-horizontal{
+.menu-horizontal {
     list-style: none;
     display: flex;
     margin: 0px 10px;
     justify-content: right;
 }
 
-.menu-horizontal a{
+.menu-horizontal a {
     text-decoration: none;
     font-size: 20px;
     padding: 5px 20px;
@@ -73,51 +82,35 @@ main{
     border-right-style: solid;
 }
 
-.menu-horizontal a:hover{
-    color:#C8D169;
+.menu-horizontal a:hover {
+    color: #C8D169;
     border-color: #FFFDF9;
 }
-/*menu hamburguesa*/
-.menu-toggle {
-    display: none; 
-}
 
- .menu-toggle {
-        display: block; /* Ahora es visible */
-        background: none;
-        border: none;
-        color: #FFFDF9; /* Color texto */
-        font-size: 30px;
-        cursor: pointer;
-        padding: 10px;
-        margin-left: auto; 
-    }
-
-
-p{
+p {
     font-weight: 400;
     font-size: 20px;
     line-height: 22px;
 }
 
-.f-title{
+.f-title {
     font-size: 61px;
     line-height: 52px;
     word-break: break-word;
 }
 
 
-.f-subtitle{
+.f-subtitle {
     font-size: 46px;
     line-height: 40px;
     margin: 0;
 }
 
-img{
+img {
     width: 700px;
 }
 
-footer{
+footer {
     background-color: #AABF16;
     display: flex;
     justify-content: space-between;
@@ -125,8 +118,8 @@ footer{
     padding: 1rem 3rem;
 }
 
-@media (max-width: 800px){
-    footer{
+@media (max-width: 800px) {
+    footer {
         padding: 2rem;
         height: 5rem;
         display: flex;
@@ -135,4 +128,6 @@ footer{
         align-items: center;
         gap: 16px;
     }
+
 }
+
