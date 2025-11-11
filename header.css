@@ -15,6 +15,7 @@ header {
     animation-timeline: scroll(root);
     animation-fill-mode: both;
     animation-range: 0% 400px;
+    transition: all 0.5s ease;
     overflow-x: hidden;
 }
 
@@ -27,6 +28,20 @@ header {
 
     to {
         height: 90px;
+        background-image: none;
+        background-color: #AABF16;
+    }
+}
+
+/*quitar gradient*/
+@keyframes quitarGradient {
+    from {
+        opacity: 1;
+
+    }
+
+    to {
+        opacity: 0;
     }
 }
 
@@ -43,8 +58,14 @@ header::before {
         );
     z-index: 1;
     pointer-events: none;
+    animation: quitarGradient;
+    animation-timeline: scroll(root);
+    animation-fill-mode: both;
+    animation-range: 0% 400px;
     /* no bloquea clics */
 }
+
+
 
 header * {
     position: relative;
@@ -160,6 +181,9 @@ header * {
         display: flex;
     }
 
+    .logo-svg{
+        height: 42px;
+    }
     .logo-svg:hover {
         fill: #FFFDF9;
     }
