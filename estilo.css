@@ -52,3 +52,21 @@ img {
 }
 
 
+#contacta{
+    color: #FFFDF9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 24px;
+    text-align: center;
+    top: 0;
+}
+
+#paginaContacto{
+    margin-top: 0;
+    background-image: url(img/fondo-contacta.png);
+    background-size: cover;
+    height: 80vh;
+}
