@@ -6,33 +6,21 @@ main {
 }
 
 
-/*header2*/
-
-.header2 {
-    height: 90px;
-    top: 0;
-    background-color: #AABF16;
-}
-.header2 a:hover{
-color: #FFFDF9;
-}
-
-.header1 {
+header {
     position: fixed;
     display: flex;
     top: 0;
     width: 100%;
-    background-image: url(img/cabecera-grande.png);
+    background-image: url(/img/cabecera-grande.png);
     animation: encoger;
     animation-timeline: scroll(root);
     animation-fill-mode: both;
     animation-range: 0% 400px;
     transition: all 0.5s ease;
     overflow-x: hidden;
-    height: 330px;
 }
 
-/* encoger .header1 */
+/* encoger header */
 @keyframes encoger {
     from {
         height: 330px;
@@ -58,11 +46,11 @@ color: #FFFDF9;
     }
 }
 
-.header1::before {
+header::before {
     content: "";
     position: absolute;
     inset: 0;
-    /* ocupa todo el .header1 */
+    /* ocupa todo el header */
     background: linear-gradient(to bottom,
             rgba(0, 0, 0, 0.4),
             /* más oscuro arriba */
@@ -78,9 +66,13 @@ color: #FFFDF9;
     /* no bloquea clics */
 }
 
+.header2::before {
+background: #AABF16;
+}
 
 
-.header1 * {
+
+header * {
     position: relative;
     z-index: 2;
 }
@@ -97,20 +89,6 @@ color: #FFFDF9;
 
 #logoCompleto:hover .logo-svg {
     fill: #AABF16;
-    
-    transition: color 0s ease;
-    animation: colorFill;
-    animation-timeline: scroll(root);
-    animation-fill-mode: both;
-    animation-range: 0% 400px;
-}
-@keyframes colorFill {
-    from {
-        fill: #C8D169; /* blanco/crema al principio */
-    }
-    to {
-        fill: #FFFDF9; /* texto oscuro sobre fondo verde */
-    }
 }
 
 #logoReducido {
@@ -147,26 +125,13 @@ color: #FFFDF9;
     color: #FFFDF9;
     font-size: 20px;
     padding: 5px 20px;
-}
-
-@keyframes colorLetras {
-    from {
-        color: #C8D169; /* blanco/crema al principio */
-    }
-    to {
-        color: #FFFDF9; /* texto oscuro sobre fondo verde */
-    }
+    transition: background-color 0s ease;
 }
 
 .nav-links a:hover {
     font-weight: 600;
     color: #C8D169;
     border-radius: 20px;
-    transition: color 0s ease;
-    animation: colorLetras;
-    animation-timeline: scroll(root);
-    animation-fill-mode: both;
-    animation-range: 0% 400px;
 }
 
 .menu-icon {
@@ -201,7 +166,7 @@ color: #FFFDF9;
         width: 100%;
     }
 
-    .header1 {
+    header {
         background-color: #AABF16;
         background-image: none;
         animation: none;
@@ -261,6 +226,7 @@ color: #FFFDF9;
     .nav-links a {
         width: 100%;
         padding: 10px 20px;
+        height: 330;
     }
 
     .nav-links a:hover {
@@ -292,18 +258,20 @@ color: #FFFDF9;
 /* FOOTER*/
 
 footer {
-    height: 5rem;
     background-color: #AABF16;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 3rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 @media (max-width: 800px) {
     footer {
         padding: 2rem;
-        height: 5rem;
+        height: 8rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -311,4 +279,18 @@ footer {
         gap: 16px;
     }
 
+}
+
+
+/*header2*/
+
+.header2 {
+    height: 90px;
+    top: 0;
+    background-color: #AABF16;
+    background-image: none;
+    animation: none;
+}
+.header2 a:hover{
+color: #FFFDF9;
 }
