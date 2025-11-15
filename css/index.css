@@ -1,12 +1,27 @@
 .layout {
     display: grid;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: auto 1fr auto;
     box-sizing: border-box;
-    height: 100%;
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
-header {
+#contendor1 {
+    padding-top: 330px;
+    box-sizing: border-box;
+    min-height: 100dvh;
+}
+
+
+
+footer{
+    display: grid;
+}
+
+.header1 {
+    display: grid;
+}
+
+.header2{
     display: grid;
 }
 
