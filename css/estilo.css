@@ -43,6 +43,7 @@ img {
     gap: 24px;
     text-align: center;
     padding-top: 114px;
+    padding-bottom: 114px;
     width: 50%;
 }
 
@@ -63,3 +64,4 @@ img {
     font-size: 32px;
     font-weight: 600;
 }
+
