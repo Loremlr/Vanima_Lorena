@@ -165,6 +165,8 @@ header * {
         background-image: none;
         animation: none;
         overflow-x: visible;
+        padding-right: 3rem 1rem;
+        width: 100%;
     }
 
     #menu {
