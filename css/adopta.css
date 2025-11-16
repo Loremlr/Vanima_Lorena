@@ -1,7 +1,7 @@
 main {
     margin: 0;
 }
-/* TODO pegar en todos los archivos menos en la home y cambiar el id al elemento html correcto */
+/* TODO pegar en todos los archivos menos en la home y cambiar el id al elemento html correcto 
 header nav ul li{
     padding: 8px;
 }
@@ -9,7 +9,7 @@ header nav ul li{
     font-weight: bold;
     border-bottom: 2px solid #fffdf9;
 }
-/* -------------------- */
+ -------------------- */
 
 #adopta-info {
     padding: 2rem;

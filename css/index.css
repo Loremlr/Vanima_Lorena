@@ -58,6 +58,12 @@ footer{
         align-items: center;
     }
 
+    .texto{
+        align-items: center;
+        text-align: center;
+        
+    }
+
     .row-section article img{
         height: auto;
     }

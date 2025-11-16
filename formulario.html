@@ -18,6 +18,8 @@
 </head>
 
 <body class="layout">
+
+
     <header class="header2">
         <div id="menu">
 
@@ -127,32 +129,52 @@
 
                 <ul class="nav-links">
                     <li><a href="adopta.html">Adopta</a></li>
-                    <li><a href="colabora.html">Colabora</a></li>
-                    <li id="pagina-actual"><a href="nosotros.html">Nosotros</a></li>
+                    <li id="pagina-actual"><a href="colabora.html">Colabora</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacta.html">Contacta</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="paginaColabora">
-        <div class="row-title">
-            <h1 class="f-title">Nuestra historia</h1>
-            
+<main class="formulario">
+    <form action="mailto:lorenalopezromera3@gmail.com" method="post" enctype="text/plain">
+
+        <div id="formulario1">
+    <legend><h3>Datos personales del adoptante</h3></legend><br>
+    <label>Nombre</label>
+    <input required="" title="Por favor escribe tu nombre" placeholder=" Introduce tu nombre">
+    <label>Apellidos</label>
+    <input required="" placeholder=" Introducir apellidos">
+    <label>Correo electronico</label>
+    <input id="correo" type="email" placeholder="introducecorreo@gmail.com">
+    <label>Teléfono</label>
+    <input required="" maxlength="9" placeholder=" +34">
         </div>
-        <section class="row-colabora">
-            <article>
-                <img src="img/nosotros.png">
-                <div class="texto">
-                    <p>Hace dos años, en plena Comunidad Valenciana, nació Vanima Protectora, un proyecto impulsado por la pasión por los animales y el compromiso con su bienestar.</p>
-                    <p>Desde nuestros inicios hace dos años, hemos conseguido que aproximadamete 23 perros hayan encontrado un hogar. Actualmente, contamos con seis perros bajo nuestra protección.</p>
-                    <p>Cada adopción es una historia distinta, pero todas tienen algo en común: una segunda oportunidad.</p>
-                </div>
-            </article>
-        </section>
+        
+        <div id="formulario2">
+    <legend><h3>Información del hogar</h3></legend><br>
+    <label>Municipio</label>
+    <input required="" placeholder="Introduce el municipio">
+    <label>Código Postal</label>
+    <input required="" maxlength="5">
+        </div>
+            
+        <div id="formulario3">
+    <legend><h3>Pago con tarjeta</h3></legend><br>
+    <label>NºTarjeta</label>
+    <input required="" maxlength="16" pattern="{1-9}">
+    <label>Fecha de Caducidad</label>
+    <input required="" type="month" min="2020-05"> 
+    <label>CSC</label>
+    <input required="" maxlength="3">
+    <button type="submit" id="enviar">Enviar</button>
+        </div>        
 
-
-    </main>
+            
+        </div> 
+    </form>
+</main>
 
     <footer class="footer1">
         <a href="index.html">
