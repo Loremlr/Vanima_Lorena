@@ -60,11 +60,20 @@ footer{
 @media (max-width: 800px) {
     .row-section{
         margin-bottom: 3rem;
+        width: 100%;
     }
+    
     .row-section article, .row-colabora article{
         flex-direction: column;
         align-items: center;
         margin-bottom: 3rem;
+    }
+
+    .f-title{
+        font-size: 36px;
+    }
+    p{
+        font-size: 16px;
     }
 
     #contendor1 {
