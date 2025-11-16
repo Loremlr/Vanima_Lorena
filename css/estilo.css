@@ -54,6 +54,10 @@ p {
 
 }
 
+#paginaContacto h2, h1, p{
+    color: #FFFDF9;
+}
+
 .contact-icon {
     display: inline-block;
     justify-content: center;
@@ -62,3 +66,6 @@ p {
     font-weight: 600;
 }
 
+.paginaColabora h1, h2, p{
+    color: #2B2B2B;
+}
