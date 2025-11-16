@@ -137,51 +137,62 @@
         </div>
     </header>
 
-<main class="formulario">
-    <form action="mailto:lorenalopezromera3@gmail.com" method="post" enctype="text/plain">
+    <main class="formulario">
+        <form action="mailto:lorenalopezromera3@gmail.com" method="post" enctype="text/plain">
 
-        <div id="formulario1">
-    <legend><h3>Datos personales del adoptante</h3></legend><br>
-    <label>Nombre: </label>
-    <input required="" title="Por favor escribe tu nombre" placeholder=" Introduce tu nombre"><br>
-    <label>Apellidos: </label>
-    <input required="" placeholder=" Introducir apellidos"><br>
-    <label>Correo electronico: </label>
-    <input id="correo" type="email" placeholder="introducecorreo@gmail.com"><br>
-    <label>Teléfono: </label>
-    <input required="" maxlength="9" placeholder=" +34"><br>
-    <label>DNI: </label>
-    <input required="" maxlength="9" placeholder="DNI + Letra"><br>
-        </div>
-        
-        <div id="formulario2">
-    <legend><h3>Información del hogar</h3></legend><br>
-    <label>Tipo de vivienda</label><br>
-    <label>Piso</label>
-    <input type="radio" id="piso" name="tipo_domicilio_" value="piso"><br>
-    <label>Casa</label>
-    <input type="radio" id="casa" name="tipo_domicilio_" value="casa"><br>
-    <label>Es vivienda propia o de alquiler</label><br>
-    <label>Propia</label>
-    <input type="radio" id="propia" name="domicilio_propio" value="sí (propio)"><br>
-    <label>Alquiler</label>
-    <input type="radio" id="alquiler" name="domicilio_propio" value="no (alquiler)"><br>
-    <label>Tienes actualmente alguna mascota</label><br>
-    <label>Sí</label>
-    <input type="radio" id="si" name="otras_mascotas_" value="si"><br>
-    <label>No</label>
-    <input type="radio" id="no" name="otras_mascotas_" value="no"><br>
-        </div>
-            
-        <div id="formulario3">
- 
-    <button type="submit" id="enviar">Enviar</button>
-        </div>        
+            <div id="formulario1">
+                <legend>
+                    <h3>Datos personales del adoptante</h3>
+                </legend>
+                <label>Nombre: </label>
+                <input required="" title="Por favor escribe tu nombre" placeholder=" Introduce tu nombre" name="nombre_"
+                    value=""><br>
+                <label>Apellidos: </label>
+                <input required="" placeholder=" Introducir apellidos" name="apellidos" value=""><br>
+                <label>Correo electronico: </label>
+                <input id="correo" type="email" placeholder="introducecorreo@gmail.com" name="email_" value=""><br>
+                <label>Teléfono: </label>
+                <input required="" type="tel" maxlength="9" placeholder=" +34" name="telefono_" value=""><br>
+                <label>DNI: </label>
+                <input required="" maxlength="9" placeholder="DNI + Letra" name="dni_" value=""><br>
+            </div>
 
-            
-        </div> 
-    </form>
-</main>
+            <div id="formulario2">
+                <legend>
+                    <h3>Información del hogar</h3>
+                </legend>
+                <label>Tipo de vivienda</label><br>
+                <label>Piso</label>
+                <input type="radio" id="piso" name="tipo_domicilio_" value="piso"><br>
+                <label>Casa</label>
+                <input type="radio" id="casa" name="tipo_domicilio_" value="casa"><br>
+                <label>Su hogar es</label><br>
+                <label>Propiedad propia</label>
+                <input type="radio" id="propia" name="domicilio_propio" value="sí (propio)"><br>
+                <label>Alquiler</label>
+                <input type="radio" id="alquiler" name="domicilio_propio" value="no (alquiler)"><br>
+
+            </div>
+
+            <div id="formulario3">
+                <legend>
+                    <h3>Datos de interes</h3>
+                </legend>
+                <label>Tienes actualmente alguna mascota</label><br>
+                <label>Sí</label>
+                <input type="radio" id="si" name="otras_mascotas_" value="si">
+                <label>¿Cuantas?</label>
+                <br>
+                <label>No</label>
+                <input type="radio" id="no" name="otras_mascotas_" value="no"><br>
+                <button type="submit" id="enviar">Enviar</button>
+
+            </div>
+
+
+            </div>
+        </form>
+    </main>
 
     <footer class="footer1">
         <a href="index.html">
@@ -258,7 +269,7 @@
             <u¡l class="menu-horizontal">
                 <li><a href="">Aviso Legal</a></li>
                 <li><a href="">Política de privacidad y cookies</a></li>
-            </ul>
+                </ul>
         </nav>
     </footer>
 
