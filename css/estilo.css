@@ -85,7 +85,7 @@ p {
     align-items: center;
     justify-content: center;
     gap: 36px;
-    
+
 }
 
 .row-colabora img{
@@ -110,6 +110,7 @@ p {
 }
 
 .mapa{
+    width: 700px;
     width: 50%;
     height: 150px;
 }

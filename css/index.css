@@ -6,19 +6,19 @@
     width: 100%;
 }
 
-#contendor1 {
+#contenedor1 {
     padding-top: 330px;
     box-sizing: border-box;
     min-height: 100dvh;
 }
 
-.row-section article{
+.row-section article {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-footer{
+footer {
     display: grid;
 }
 
@@ -26,7 +26,7 @@ footer{
     display: grid;
 }
 
-.header2{
+.header2 {
     display: grid;
 }
 
@@ -57,70 +57,66 @@ footer{
 }
 
 /*Responsive*/
-@media (max-width: 800px) {
-    .row-section{
-        margin-bottom: 3rem;
-        width: 100%;
-    }
-    
-    .row-section article, .row-colabora article{
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 3rem;
-    }
 
-    .f-title{
-        font-size: 36px;
-    }
-    p{
-        font-size: 16px;
-    }
-
-    #contendor1 {
-    padding-top: 20px;
-    box-sizing: border-box;
-    min-height: 100dvh;
-    margin-top: 72px;
-}
-
-    .texto{
-        
-        text-align: start;
-        p{
-            padding: 0;
-            margin-top: 0.5rem;
-            margin: 0.5rem;
+    @media (max-width: 800px) {
+        .row-section {
+            margin-bottom: 3rem;
         }
-    }
 
-    .row-section article img{
-        height: auto;
-    }
+        .row-section article,
+        .row-colabora article {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
 
-    .row-section article h2 {
-        margin-bottom: 1rem;
-        text-align: center;
-    }
+        #contendor1 {
+            padding-top: 20px;
+            box-sizing: border-box;
+            min-height: 100dvh;
+            margin-top: 72px;
+        }
 
-    /* .row-section article p {
+        .texto {
+
+            text-align: start;
+
+            p {
+                padding: 0;
+                margin-top: 0.5rem;
+                margin: 0.5rem;
+            }
+        }
+
+        .row-section article img {
+            height: auto;
+        }
+
+        .row-section article h2 {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        /* .row-section article p {
         padding: 0 3.2rem 0 3.2rem;
     } */
 
-    .row-section article>div{
-        width: 100%;
-    }
+        .row-section article>div {
+            width: 100%;
+        }
 
-    /* .row-colabora article p{
+        /* .row-colabora article p{
         padding: 0 3.2rem 0 3.2rem;
     } */
-    .row-colabora article>div{
-        width: 100%;
-    }
+        .row-colabora article>div {
+            width: 100%;
+        }
 
-    #paginaContacto {
+
+        #paginaContacto {
     background-image: url(/img/fondo-contacta2.png);
     background-size: cover;
     margin-top: 0;
-}
+        }
 
-}
+    }
