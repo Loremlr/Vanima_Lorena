@@ -108,5 +108,10 @@ footer{
         width: 100%;
     }
 
+    #paginaContacto {
+    background-image: url(/img/fondo-contacta2.png);
+    background-size: cover;
+    margin-top: 0;
+}
 
 }
