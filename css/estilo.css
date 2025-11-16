@@ -27,11 +27,11 @@ p {
     margin: 0;
 }
 
-img {
+.img-index {
     width: 700px;
 }
 
-
+/*PAGINA DE CONTACTO*/
 
 #contacta {
     color: #FFFDF9;
@@ -55,12 +55,9 @@ img {
 }
 
 .contact-icon {
-    display: flex;
+    display: inline-block;
     justify-content: center;
-    align-items: center;
-    height: 30px;
-    align-items: center;
-    text-align: center;
+    vertical-align: middle;
     font-size: 32px;
     font-weight: 600;
 }

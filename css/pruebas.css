@@ -1,0 +1,80 @@
+#paginaAdopta{
+    padding-top: 90px;
+    padding-bottom: 90px;    
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    height: 420px;
+    width: 678px;
+    padding-right: 24px;
+    border: #AABF16 solid;
+    border-radius: 15px;
+}
+
+.tarjetas {
+    justify-content:flex-start;
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 100%;
+    padding-left: 12%;
+    padding-right: 12%;
+
+}
+
+.animal-img {
+    float: left;
+    height: 420px;
+    width: 327px;
+}
+
+.animal-img img {
+    border-radius: 7px 0 0 7px;
+}
+
+.animal-info {
+    float: left;
+    margin-left: 24px;
+    height: 420px;
+    width: 327px;
+    border-radius: 0 7px 10px 7px;
+    background-color: #ffffff;
+}
+
+.animal-text {
+    height: 300px;
+    width: 327px;
+}
+
+
+button {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: #AABF16;
+    border-radius: 10px;
+    border: none;
+    height: 36px;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.huellas-icon {
+    height: 18px;
+    color: #FFFDF9;
+}
+
+button:hover .huellas-icon{
+    fill:#FFFDF9;
+}
+
+button a {
+    color: #FFFDF9;
+    text-decoration: none;
+    text-decoration: none;
+}
