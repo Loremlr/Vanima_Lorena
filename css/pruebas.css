@@ -25,15 +25,29 @@
 
 }
 
+.nombre-animal{
+    font-family: schoolbell;
+}
+
+
 .animal-img {
     float: left;
     height: 420px;
     width: 327px;
+    overflow: hidden;
 }
 
 .animal-img img {
     border-radius: 7px 0 0 7px;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
 }
+
+.animal-img:has(:hover, :focus) {
+  --img-scale: 1.1;
+  overflow: hidden;
+}
+
 
 .animal-info {
     float: left;
@@ -54,23 +68,100 @@ button {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    background-color: #AABF16;
-    border-radius: 10px;
+    background-color: #C8D169;
+    border-radius: 20px;
     border: none;
     height: 36px;
     display: flex;
     gap: 10px;
-    padding: 10px;
+    padding: 16px;
     justify-content: space-between;
+    font-family: schoolbell;
+    font-size: 16px;
+    	-webkit-animation: wobble-hor-bottom 0.8s both;
+	        animation: wobble-hor-bottom 0.8s both;
 }
 
 .huellas-icon {
     height: 18px;
     color: #FFFDF9;
+    fill:#FFFDF9;
 }
 
+@-webkit-keyframes shake-bl {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+@keyframes shake-bl {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+
+
 button:hover .huellas-icon{
-    fill:#FFFDF9;
+    animation: shake-bl 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+button:hover{
+background-color: #AABF16;
 }
 
 button a {
