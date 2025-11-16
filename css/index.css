@@ -53,12 +53,12 @@ footer{
 
 /*Responsive*/
 @media (max-width: 800px) {
-    .row-section article {
+    .row-section article, .row-colabora article{
         flex-direction: column;
         align-items: center;
     }
 
-    .row-section article img {
+    .row-section article img{
         height: auto;
     }
 
@@ -70,7 +70,14 @@ footer{
         padding: 0 3.2rem 0 3.2rem;
     }
 
-    .row-section article>div {
+    .row-section article>div{
+        width: 100%;
+    }
+
+    .row-colabora article p{
+        padding: 0 3.2rem 0 3.2rem;
+    }
+    .row-colabora article>div{
         width: 100%;
     }
 }

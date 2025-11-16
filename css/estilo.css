@@ -12,6 +12,7 @@ p {
     font-weight: 400;
     font-size: 20px;
     line-height: 22px;
+    color: #2B2B2B;
 }
 
 .f-title {
@@ -54,7 +55,7 @@ p {
 
 }
 
-#paginaContacto h2, h1, p{
+#paginaContacto h2, #paginaContacto h1, #paginaContacto p{
     color: #FFFDF9;
 }
 
@@ -66,6 +67,41 @@ p {
     font-weight: 600;
 }
 
-.paginaColabora h1, h2, p{
+/*PÁGINA COLABORA*/
+
+.row-colabora {
+    margin: 1rem 3rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 24px;
+}
+
+.row-colabora article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    
+}
+
+.row-colabora img{
+    width: 600px;
+}
+
+.lista-tareas li{
     color: #2B2B2B;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 16px;
+}
+.lista-tareas {
+    padding: 0;
+}
+
+.texto{
+    width: 30%;
 }

@@ -2,29 +2,26 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/pruebas.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/adopta.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital@0;1&family=Schoolbell&display=swap"
-        rel="stylesheet">
-    <link rel="icon" type="img/png" href="img/fav-icon-vanima.svg">
+        rel="stylesheet" />
+    <link rel="icon" type="img/png" href="img/fav-icon-vanima.svg" />
     <script src="script.js"></script>
-    <title>PRUEBA</title>
+    <title>Vanima</title>
 </head>
 
-<body class="paginaAdopta">
-
+<body>
     <header class="header2">
         <div id="menu">
-
             <nav class="nav-bar">
-
                 <a href="index.html" id="logoCompleto2">
                     <svg class="logo-svg" id="logoCompleto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80">
                         <g xmlns="http://www.w3.org/2000/svg" id="Capa_1-2" data-name="Capa 1">
@@ -120,15 +117,15 @@
                     </svg>
                 </a>
 
-                <input type="checkbox" id="menu-toggle">
+                <input type="checkbox" id="menu-toggle" />
                 <label for="menu-toggle" class="menu-icon">
                     <div class="line"></div>
                     <div class="line"></div>
                     <div class="line"></div>
                 </label>
-
+                <!--TODO cambiar id pagina actual en la pagina correcta -->
                 <ul class="nav-links">
-                    <li><a href="adopta.html">Adopta</a></li>
+                    <li id="pagina-actual"><a href="adopta.html">Adopta</a></li>
                     <li><a href="colabora.html">Colabora</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacta.html">Contacta</a></li>
@@ -139,189 +136,223 @@
 
     <main id="paginaAdopta">
         <section>
-        <div id="adopta-info">
-        <h1>¿Estás pensando en adoptar?</h1>
-        <p>Nuestros perretes estan esperando encontrar un hogar definitivo, pero antes de hacer oficial la adopcion y con finalidad
-        de ver la adaptacion de ambos los primeros 15 días serán de acogida.</p>
-        <p>Como verás cada uno tiene un color diferente según su situación</p>
-        </div>
+            <div id="adopta-info">
+                <h1 class="f-title">¿Estás pensando en adoptar?</h1>
+                <p>
+                    Nuestros perretes estan esperando encontrar un hogar definitivo,
+                    pero antes de hacer oficial la adopción y con finalidad de ver la
+                    adaptacion de ambos los primeros 15 días serán de acogida.
+                </p>
+                <p>
+                    Como verás cada uno tiene un color diferente según su situación.
+                </p>
+            </div>
 
-        <section class="tarjetas">
+            <section class="tarjetas-section">
+                <div class="cards-container">
+                    <article id="card1" class="card">
+                        <div class="animal-img">
+                            <img src="img/leku.jpg" height="420" width="327" />
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-text">
+                                <h1 class="nombre-animal">Leku</h1>
+                                <h2>Edad: 3 años</h2>
+                                <h2>Peso: 17 Kg</h2>
+                                <p>
+                                    Fue encontrado en la carretera sin microchip por la perrera
+                                    municipal. Es un perro joven, muy alegre y juguetón!
+                                </p>
+                            </div>
+                            <button>
+                                <a href="#" class="read-more">Adoptar</a><svg class="huellas-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-paw-print-icon lucide-paw-print">
+                                    <circle cx="11" cy="4" r="2" />
+                                    <circle cx="18" cy="8" r="2" />
+                                    <circle cx="20" cy="16" r="2" />
+                                    <path
+                                        d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
 
-            <article id="card1" class="card">
-                <div class="animal-img">
-                    <img src="img/leku.jpg" height="420" width="327">
-                </div>
-                <div class="animal-info">
-                    <div class="animal-text">
-                        <h1 class="nombre-animal">Leku</h1>
-                        <h2>Edad: 3 años</h2>
-                        <h2>Peso: 17 Kg</h2>
-                        <p>Fue encontrado en la carretera sin microchip por la perrera municipal. Es un perro joven, muy
-                            alegre y juguetón!</p>
-                    </div>
-                    <button><a href="#" class="read-more">Adoptar</a><svg class="huellas-icon"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-paw-print-icon lucide-paw-print">
-                            <circle cx="11" cy="4" r="2" />
-                            <circle cx="18" cy="8" r="2" />
-                            <circle cx="20" cy="16" r="2" />
-                            <path
-                                d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" />
-                        </svg></button>
-                </div>
-            </article>
+                    <article id="card2" class="card">
+                        <div class="animal-img">
+                            <img src="img/tommy.jpg" height="420" width="327" />
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-text">
+                                <h1 class="nombre-animal">Tommy</h1>
+                                <h2>Edad: 3 años</h2>
+                                <h2>Peso: 17 Kg</h2>
+                                <p>
+                                    Fue encontrado en la carretera sin microchip por la perrera
+                                    municipal. Es un perro joven, muy alegre y juguetón!
+                                </p>
+                            </div>
+                            <button>
+                                <a href="#" class="read-more">Adoptar</a><svg class="huellas-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-paw-print-icon lucide-paw-print">
+                                    <circle cx="11" cy="4" r="2" />
+                                    <circle cx="18" cy="8" r="2" />
+                                    <circle cx="20" cy="16" r="2" />
+                                    <path
+                                        d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
 
-            <article id="card2" class="card">
-                <div class="animal-img">
-                    <img src="img/tommy.jpg" height="420" width="327">
-                </div>
-                <div class="animal-info">
-                    <div class="animal-text">
-                        <h1 class="nombre-animal">Tommy</h1>
-                        <h2>Edad: 3 años</h2>
-                        <h2>Peso: 17 Kg</h2>
-                        <p>Fue encontrado en la carretera sin microchip por la perrera municipal. Es un perro joven, muy
-                            alegre y juguetón!</p>
-                    </div>
-                    <button><a href="#" class="read-more">Adoptar</a><svg class="huellas-icon"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-paw-print-icon lucide-paw-print">
-                            <circle cx="11" cy="4" r="2" />
-                            <circle cx="18" cy="8" r="2" />
-                            <circle cx="20" cy="16" r="2" />
-                            <path
-                                d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" />
-                        </svg></button>
-                </div>
-            </article>
+                    <article id="card2" class="card">
+                        <div class="animal-img">
+                            <img src="img/sharp.png" height="420" width="327" />
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-text">
+                                <h1 class="nombre-animal">Sharp</h1>
+                                <h2>Edad: 3 años</h2>
+                                <h2>Peso: 17 Kg</h2>
+                                <p>
+                                    Fue encontrado en la carretera sin microchip por la perrera
+                                    municipal. Es un perro joven, muy alegre y juguetón!
+                                </p>
+                            </div>
+                            <button>
+                                <a href="#" class="read-more">Adoptar</a><svg class="huellas-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-paw-print-icon lucide-paw-print">
+                                    <circle cx="11" cy="4" r="2" />
+                                    <circle cx="18" cy="8" r="2" />
+                                    <circle cx="20" cy="16" r="2" />
+                                    <path
+                                        d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
 
-            <article id="card2" class="card">
-                <div class="animal-img">
-                    <img src="img/sharp.png" height="420" width="327">
-                </div>
-                <div class="animal-info">
-                    <div class="animal-text">
-                        <h1 class="nombre-animal">Sharp</h1>
-                        <h2>Edad: 3 años</h2>
-                        <h2>Peso: 17 Kg</h2>
-                        <p>Fue encontrado en la carretera sin microchip por la perrera municipal. Es un perro joven, muy
-                            alegre y juguetón!</p>
-                    </div>
-                    <button><a href="#" class="read-more">Adoptar</a><svg class="huellas-icon"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-paw-print-icon lucide-paw-print">
-                            <circle cx="11" cy="4" r="2" />
-                            <circle cx="18" cy="8" r="2" />
-                            <circle cx="20" cy="16" r="2" />
-                            <path
-                                d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" />
-                        </svg></button>
-                </div>
-            </article>
+                    <article id="card3" class="card">
+                        <div class="animal-img">
+                            <img src="img/bumbu.jpg" height="420" width="327" />
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-text">
+                                <h1 class="nombre-animal">Bumbu</h1>
+                                <h2>Edad: 3 años</h2>
+                                <h2>Peso: 17 Kg</h2>
+                                <p>
+                                    Fue encontrado en la carretera sin microchip por la perrera
+                                    municipal. Es un perro joven, muy alegre y juguetón!
+                                </p>
+                            </div>
+                            <button>
+                                <a href="#" class="read-more">Adoptar</a><svg class="huellas-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-paw-print-icon lucide-paw-print">
+                                    <circle cx="11" cy="4" r="2" />
+                                    <circle cx="18" cy="8" r="2" />
+                                    <circle cx="20" cy="16" r="2" />
+                                    <path
+                                        d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
 
-            <article id="card3" class="card">
-                <div class="animal-img">
-                    <img src="img/bumbu.jpg" height="420" width="327">
-                </div>
-                <div class="animal-info">
-                    <div class="animal-text">
-                        <h1 class="nombre-animal">Bumbu</h1>
-                        <h2>Edad: 3 años</h2>
-                        <h2>Peso: 17 Kg</h2>
-                        <p>Fue encontrado en la carretera sin microchip por la perrera municipal. Es un perro joven, muy
-                            alegre y juguetón!</p>
-                    </div>
-                    <button><a href="#" class="read-more">Adoptar</a><svg class="huellas-icon"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-paw-print-icon lucide-paw-print">
-                            <circle cx="11" cy="4" r="2" />
-                            <circle cx="18" cy="8" r="2" />
-                            <circle cx="20" cy="16" r="2" />
-                            <path
-                                d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" />
-                        </svg></button>
-                </div>
-            </article>
+                    <article id="card4" class="card">
+                        <div class="animal-img">
+                            <img src="img/ana.jpg" height="420" width="327" />
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-text">
+                                <h1 class="nombre-animal">Ana</h1>
+                                <h2>Edad: 3 años</h2>
+                                <h2>Peso: 17 Kg</h2>
+                                <p>
+                                    Fue encontrado en la carretera sin microchip por la perrera
+                                    municipal. Es un perro joven, muy alegre y juguetón!
+                                </p>
+                            </div>
+                            <button>
+                                <a href="#" class="read-more">Adoptar</a><svg class="huellas-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-paw-print-icon lucide-paw-print">
+                                    <circle cx="11" cy="4" r="2" />
+                                    <circle cx="18" cy="8" r="2" />
+                                    <circle cx="20" cy="16" r="2" />
+                                    <path
+                                        d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
 
-            <article id="card4" class="card">
-                <div class="animal-img">
-                    <img src="img/ana.jpg" height="420" width="327">
-                </div>
-                <div class="animal-info">
-                    <div class="animal-text">
-                        <h1 class="nombre-animal">Ana</h1>
-                        <h2>Edad: 3 años</h2>
-                        <h2>Peso: 17 Kg</h2>
-                        <p>Fue encontrado en la carretera sin microchip por la perrera municipal. Es un perro joven, muy
-                            alegre y juguetón!</p>
-                    </div>
-                    <button><a href="#" class="read-more">Adoptar</a><svg class="huellas-icon"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-paw-print-icon lucide-paw-print">
-                            <circle cx="11" cy="4" r="2" />
-                            <circle cx="18" cy="8" r="2" />
-                            <circle cx="20" cy="16" r="2" />
-                            <path
-                                d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" />
-                        </svg></button>
-                </div>
-            </article>
+                    <article id="card5" class="card">
+                        <div class="animal-img">
+                            <img src="img/IMGP0017.JPG" height="420" width="327" />
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-text">
+                                <h1 class="nombre-animal">Laika</h1>
+                                <h2>Edad: 3 años</h2>
+                                <h2>Peso: 17 Kg</h2>
+                                <p>
+                                    Fue encontrado en la carretera sin microchip por la perrera
+                                    municipal. Es un perro joven, muy alegre y juguetón!
+                                </p>
+                            </div>
+                            <button>
+                                <a href="#" class="read-more">Adoptar</a><svg class="huellas-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-paw-print-icon lucide-paw-print">
+                                    <circle cx="11" cy="4" r="2" />
+                                    <circle cx="18" cy="8" r="2" />
+                                    <circle cx="20" cy="16" r="2" />
+                                    <path
+                                        d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
 
-            <article id="card5" class="card">
-                <div class="animal-img">
-                    <img src="img/IMGP0017.JPG" height="420" width="327">
+                    <article id="card6" class="card">
+                        <div class="animal-img">
+                            <img src="img/byron.jpg" height="420" width="327" />
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-text">
+                                <h1 class="nombre-animal">Byron</h1>
+                                <h2>Edad: 3 años</h2>
+                                <h2>Peso: 17 Kg</h2>
+                                <p>
+                                    Fue encontrado en la carretera sin microchip por la perrera
+                                    municipal. Es un perro joven, muy alegre y juguetón!
+                                </p>
+                            </div>
+                            <button>
+                                <a href="#" class="read-more">Adoptar</a><svg class="huellas-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-paw-print-icon lucide-paw-print">
+                                    <circle cx="11" cy="4" r="2" />
+                                    <circle cx="18" cy="8" r="2" />
+                                    <circle cx="20" cy="16" r="2" />
+                                    <path
+                                        d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
                 </div>
-                <div class="animal-info">
-                    <div class="animal-text">
-                        <h1 class="nombre-animal">Laika</h1>
-                        <h2>Edad: 3 años</h2>
-                        <h2>Peso: 17 Kg</h2>
-                        <p>Fue encontrado en la carretera sin microchip por la perrera municipal. Es un perro joven, muy
-                            alegre y juguetón!</p>
-                    </div>
-                    <button><a href="#" class="read-more">Adoptar</a><svg class="huellas-icon"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-paw-print-icon lucide-paw-print">
-                            <circle cx="11" cy="4" r="2" />
-                            <circle cx="18" cy="8" r="2" />
-                            <circle cx="20" cy="16" r="2" />
-                            <path
-                                d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" />
-                        </svg></button>
-                </div>
-            </article>
-
-            <article id="card6" class="card">
-                <div class="animal-img">
-                    <img src="img/byron.jpg" height="420" width="327">
-                </div>
-                <div class="animal-info">
-                    <div class="animal-text">
-                        <h1 class="nombre-animal">Byron</h1>
-                        <h2>Edad: 3 años</h2>
-                        <h2>Peso: 17 Kg</h2>
-                        <p>Fue encontrado en la carretera sin microchip por la perrera municipal. Es un perro joven, muy
-                            alegre y juguetón!</p>
-                    </div>
-                    <button><a href="#" class="read-more">Adoptar</a><svg class="huellas-icon"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-paw-print-icon lucide-paw-print">
-                            <circle cx="11" cy="4" r="2" />
-                            <circle cx="18" cy="8" r="2" />
-                            <circle cx="20" cy="16" r="2" />
-                            <path
-                                d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" />
-                        </svg></button>
-                </div>
-            </article>
             </section>
         </section>
     </main>
@@ -404,7 +435,6 @@
             </ul>
         </nav>
     </footer>
-
 </body>
 
 </html>

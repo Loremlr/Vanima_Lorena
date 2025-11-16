@@ -1,0 +1,289 @@
+main {
+    margin: 0;
+}
+/* TODO pegar en todos los archivos menos en la home y cambiar el id al elemento html correcto */
+header nav ul li{
+    padding: 8px;
+}
+#pagina-actual {
+    font-weight: bold;
+    border-bottom: 2px solid #fffdf9;
+}
+/* -------------------- */
+
+#adopta-info {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#adopta-info p {
+    width: 60%;
+}
+
+h1 {
+    color: #aabf16;
+    text-wrap: wrap;
+}
+
+.tarjetas-section {
+    margin-bottom: 3rem;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.cards-container .card:last-child {
+    justify-self: start;
+}
+
+/* tarjetas */
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 678px;
+    height: auto;
+    box-shadow: 0 0 12px rgba(170, 191, 22, 0.35);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.animal-img {
+    overflow: hidden;
+    width: 50%;
+    max-width: 327px;
+}
+
+.animal-img img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px 0 0 7px;
+    transform: scale(var(--img-scale));
+    transition: transform 0.4s ease-in-out;
+}
+
+.animal-img:has(:hover, :focus) {
+    --img-scale: 1.1;
+}
+
+/* informacion */
+.animal-info {
+    width: 50%;
+    padding: 16px;
+    background: white;
+}
+
+.animal-text {
+    height: auto;
+    width: 100%;
+}
+
+button {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: #c8d169;
+    border-radius: 20px;
+    border: none;
+    height: 36px;
+    display: flex;
+    gap: 10px;
+    padding: 16px;
+    justify-content: space-between;
+    font-family: schoolbell;
+    font-size: 16px;
+    -webkit-animation: wobble-hor-bottom 0.8s both;
+    animation: wobble-hor-bottom 0.8s both;
+}
+
+.huellas-icon {
+    height: 18px;
+    color: #fffdf9;
+    fill: #fffdf9;
+}
+
+@-webkit-keyframes shake-bl {
+
+    0%,
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+    }
+
+    10% {
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        -webkit-transform: rotate(-4deg);
+        transform: rotate(-4deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        -webkit-transform: rotate(4deg);
+        transform: rotate(4deg);
+    }
+
+    80% {
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+    }
+
+    90% {
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+}
+
+@keyframes shake-bl {
+
+    0%,
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+    }
+
+    10% {
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        -webkit-transform: rotate(-4deg);
+        transform: rotate(-4deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        -webkit-transform: rotate(4deg);
+        transform: rotate(4deg);
+    }
+
+    80% {
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+    }
+
+    90% {
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+}
+
+button:hover .huellas-icon {
+    animation: shake-bl 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+button:hover {
+    background-color: #aabf16;
+}
+
+button a {
+    color: #fffdf9;
+    text-decoration: none;
+    text-decoration: none;
+}
+
+/* laptop */
+@media (max-width: 1024px) {
+    #adopta-info p {
+        width: 100%;
+    }
+
+    main {
+        padding: 0 2.5rem;
+    }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    main {
+        padding: 0 2rem;
+    }
+
+    .cards-container {
+        width: 50%;
+    }
+
+    .card {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .animal-img {
+        float: none;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .animal-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .animal-info {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        border-radius: 12px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .animal-info button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .animal-text {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 599px) {
+    main {
+        padding: 0 1rem;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
