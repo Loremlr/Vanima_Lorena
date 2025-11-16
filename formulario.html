@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/formulario.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
@@ -140,59 +141,97 @@
     <main class="formulario">
         <form action="mailto:lorenalopezromera3@gmail.com" method="post" enctype="text/plain">
 
-            <div id="formulario1">
+            <div id="f1" class="form-section">
                 <legend>
                     <h3>Datos personales del adoptante</h3>
                 </legend>
-                <label>Nombre: </label>
-                <input required="" title="Por favor escribe tu nombre" placeholder=" Introduce tu nombre" name="nombre_"
-                    value=""><br>
-                <label>Apellidos: </label>
-                <input required="" placeholder=" Introducir apellidos" name="apellidos" value=""><br>
-                <label>Correo electronico: </label>
-                <input id="correo" type="email" placeholder="introducecorreo@gmail.com" name="email_" value=""><br>
-                <label>Teléfono: </label>
-                <input required="" type="tel" maxlength="9" placeholder=" +34" name="telefono_" value=""><br>
-                <label>DNI: </label>
-                <input required="" maxlength="9" placeholder="DNI + Letra" name="dni_" value=""><br>
+                <div class="input-container">
+                    <label>Nombre: </label>
+                    <input class="input-text" required="" title="Por favor escribe tu nombre"
+                        placeholder=" Introduce tu nombre" name="nombre_" value="">
+                </div>
+                <div class="input-container">
+                    <label>Apellidos: </label>
+                    <input class="input-text" required="" placeholder=" Introducir apellidos" name="apellidos" value="">
+                </div>
+                <div class="input-container">
+                    <label>Correo electrónico: </label>
+                    <input class="input-text" id="correo" type="email" placeholder="introducecorreo@gmail.com"
+                        name="email_" value="">
+                </div>
+                <div class="input-container">
+                    <label>Teléfono: </label>
+                    <input class="input-text" required="" type="tel" maxlength="9" placeholder="+34" name="telefono_"
+                        value="">
+                </div>
+                <div class="input-container">
+                    <label>DNI: </label>
+                    <input class="input-text" required="" maxlength="9" placeholder="DNI + Letra" name="dni_" value="">
+                </div>
             </div>
 
-            <div id="formulario2">
+            <div id="f2" class="form-section">
                 <legend>
                     <h3>Información del hogar</h3>
                 </legend>
-                <label>Tipo de vivienda</label><br>
-                <label>Piso</label>
-                <input type="radio" id="piso" name="tipo_domicilio_" value="piso"><br>
-                <label>Casa</label>
-                <input type="radio" id="casa" name="tipo_domicilio_" value="casa"><br>
-                <label>Su hogar es</label><br>
-                <label>Propiedad propia</label>
-                <input type="radio" id="propia" name="domicilio_propio" value="sí (propio)"><br>
-                <label>Alquiler</label>
-                <input type="radio" id="alquiler" name="domicilio_propio" value="no (alquiler)"><br>
+                <div>
+                    <label>Tipo de vivienda</label>
+                    <div class="radio-button-container">
+                        <div class="radio-label">
+                            <input type="radio" id="piso" name="tipo_domicilio_" value="piso">
+                            <label>Piso</label>
+                        </div>
+                        <div class="radio-label">
+                            <input type="radio" id="casa" name="tipo_domicilio_" value="casa">
+                            <label>Casa</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label>Su hogar es</label>
+                    <div class="radio-button-container">
+                        <div class="radio-label">
+                            <input type="radio" id="propia" name="domicilio_propio" value="sí (propio)">
+                            <label>Propiedad propia</label>
+                        </div>
+                        <div class="radio-label">
+                            <input type="radio" id="alquiler" name="domicilio_propio" value="no (alquiler)">
+                            <label>Alquiler</label>
+                        </div>
 
+                    </div>
+                </div>
             </div>
 
-            <div id="formulario3">
+            <div id="f3" class="form-section">
                 <legend>
-                    <h3>Datos de interes</h3>
+                    <h3>Datos de interés</h3>
                 </legend>
-                <label>Tienes actualmente alguna mascota</label><br>
-                <label>Sí</label>
-                <input type="radio" id="si" name="otras_mascotas_" value="si">
-                <label>¿Cuantas?</label>
-                <br>
-                <label>No</label>
-                <input type="radio" id="no" name="otras_mascotas_" value="no"><br>
-                <label for="observaciones">Observaciones:</label><br>
-                <textarea id="observaciones" name="observaciones" placeholder="Escribe aquí"></textarea>
-
-                <button type="submit" id="enviar">Enviar</button>
-
+                <div>
+                    <label>¿Tienes actualmente alguna mascota?</label>
+                    <div class="radio-button-container">
+                        <div class="radio-label">
+                            <input type="radio" id="si" name="otras_mascotas_" value="si">
+                            <label>Sí</label>
+                        </div>
+                        <div class="radio-label">
+                            <input type="radio" id="no" name="otras_mascotas_" value="no">
+                            <label>No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label>¿Cuántas? </label>
+                    <input class="input-text" placeholder=" Número de mascotas" name="mascotas" value="">
+                </div>
+                <div class="textarea-container">
+                    <label for="observaciones">Observaciones:</label>
+                    <textarea id="observaciones" name="observaciones" placeholder="Escribe aquí"></textarea>
+                </div>
             </div>
 
-
+            <div class="submit-container">
+                <button mailto:lorenalopezromera3@gmail.com type="submit" id="enviar">Enviar</button>
             </div>
         </form>
     </main>
