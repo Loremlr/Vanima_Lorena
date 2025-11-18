@@ -8,6 +8,7 @@ body {
 
 
 
+
 p {
     font-weight: 400;
     font-size: 20px;
@@ -49,6 +50,8 @@ p {
 #paginaContacto {
     background-image: url(/img/fondo-contacta2.png);
     background-size: cover;
+        padding: 0;
+    margin: 0;
 }
 
 #paginaContacto .row-section{
@@ -70,13 +73,16 @@ p {
 }
 
 /*PÁGINA COLABORA*/
-
+.paginaColabora{
+    margin: 0;
+    width: 100%;
+}
 .row-colabora {
-    margin: 1rem 3rem 1rem 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 24px;
+    padding: 1rem 3rem;
 }
 
 .row-colabora article {
@@ -89,25 +95,21 @@ p {
 }
 
 .row-colabora img{
-    width: 600px;
+    width: 50%;
 }
 
 .lista-tareas li{
     color: #2B2B2B;
     text-decoration: none;
     font-size: 20px;
-    padding: 0;
+    margin:36px;
     margin-bottom: 16px;
 }
 .lista-tareas {
     padding: 0;
 }
 
-.texto{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-}
+
 
 .mapa{
     width: 700px;

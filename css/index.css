@@ -9,7 +9,7 @@
 #contenedor1 {
     padding-top: 330px;
     box-sizing: border-box;
-    min-height: 100dvh;
+    margin: 0;
 }
 
 .row-section article {
@@ -58,65 +58,86 @@ footer {
 
 /*Responsive*/
 
-    @media (max-width: 800px) {
-        .row-section {
-            margin-bottom: 3rem;
+@media (max-width: 800px) {
+    .row-section {
+        margin-bottom: 3rem;
+    }
+
+    .row-section article,
+    .row-colabora article {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    #contendor1 {
+        padding-top: 20px;
+        box-sizing: border-box;
+        min-height: 100dvh;
+        margin-top: 72px;
+    }
+
+    .texto {
+
+        text-align: start;
+
+        p {
+            padding: 0;
+            margin-top: 0.5rem;
+            margin: 0.5rem;
         }
+    }
 
-        .row-section article,
-        .row-colabora article {
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 3rem;
-        }
+    .img-index {
+    width: 90%;
+}
 
-        #contendor1 {
-            padding-top: 20px;
-            box-sizing: border-box;
-            min-height: 100dvh;
-            margin-top: 72px;
-        }
+    .row-section article img {
+        height: auto;
+    }
 
-        .texto {
+    .row-section article h2 {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
 
-            text-align: start;
-
-            p {
-                padding: 0;
-                margin-top: 0.5rem;
-                margin: 0.5rem;
-            }
-        }
-
-        .row-section article img {
-            height: auto;
-        }
-
-        .row-section article h2 {
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-
-        /* .row-section article p {
+    /* .row-section article p {
         padding: 0 3.2rem 0 3.2rem;
     } */
 
-        .row-section article>div {
-            width: 100%;
-        }
+    .row-section article>div {
+        width: 100%;
+    }
 
-        /* .row-colabora article p{
+    /* .row-colabora article p{
         padding: 0 3.2rem 0 3.2rem;
     } */
-        .row-colabora article>div {
+    /*.row-colabora article>div {
+            width: 100%;
+        }*/
+
+    .paginaColabora {
+        margin-top: 0px;
+        box-sizing: border-box;
+        padding: 1rem 3rem;
+    }
+
+        #nosotros-img{
             width: 100%;
         }
 
-
-        #paginaContacto {
+    .paginaContacto {
     background-image: url(/img/fondo-contacta2.png);
     background-size: cover;
     margin-top: 0;
+    padding: 1rem 3rem;
+    box-sizing: border-box;
+    width: 100%;
         }
 
-    }
+        #contenedor1 {
+    margin-top: 0px;
+    padding-top: 104px;
+}
+
+}
